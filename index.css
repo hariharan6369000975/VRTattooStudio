@@ -1,0 +1,383 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    line-height: 1.6;
+    color: #333;
+     overflow-x: hidden; 
+    
+    }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; 
+    background-color: rgb(0, 0, 0); 
+    width: 99%; 
+    z-index: 1000;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.1s ease-in-out; 
+}
+
+.navbar.fixed {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    border-radius: 0; 
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(0, 0, 0); 
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.navbar h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+    box-shadow: 0 5px 0 #ffffff; 
+}
+
+
+header {
+    height: 110vh;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+header img {
+    width: 100%;
+}
+
+.header-content {
+    max-width: 50%;
+    color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%; 
+    right: 65%; 
+    z-index: 100; 
+    opacity: 0; 
+    transform: translateX(50%); 
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color: #ffffff;
+    margin: 0;
+    transform: translateX(100%); 
+    transition: transform 1s ease-in-out;
+}
+
+.header-content p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000000;
+    text-shadow: 
+        -1px -1px 0 rgb(255, 255, 255), 
+        1px -1px 0 rgb(255, 255, 255), 
+        -1px 1px 0 rgb(255, 255, 255),  
+        1px 1px 0 rgb(255, 255, 255);   
+}
+
+.header-content button {
+    background-color: #d1d1d1;
+    color: #000000;
+    border: none;
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-family: "Alkatra", system-ui;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-content button:hover {
+    text-decoration: bold;
+    color: #000000;
+    background-color: #f5f5f5; 
+    transform: scale(1.05); 
+}
+
+
+header.loaded .header-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+header.loaded h1 {
+    transform: translateX(0);
+}
+
+
+#home {
+    padding-bottom: 150px;
+    padding-top: 0px;
+    min-height: 100vh; 
+    background-color: #fffefe;
+    overflow: hidden;
+    position: relative; 
+    margin-top: 60px; 
+}
+
+.home-info {
+    padding: 40px;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+}
+
+.home-info h2 {
+    color: #000000;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    margin: 0;
+    position: absolute;
+    left: 23%;
+}
+
+.home-info p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #666;
+    padding-top: 70px;
+    font-family: "Alkatra", system-ui;
+}
+
+.know-more-btn {
+    background-color: #686868;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    font-family: "Alkatra", system-ui;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.know-more-btn:hover {
+    background-color: #525252;
+    transform: scale(1.05);
+}
+
+.home-image {
+    position: sticky; 
+    width: 90%;
+    height: 30%;
+    margin-left: 63px;
+    border-radius: 30px;
+}
+
+
+#old {
+    padding:30px;
+    background-color:  #ffffff;
+    text-align: center;
+}
+
+#old h3, #old h2 {
+    color: #333;
+}
+
+#old h3 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#old h2 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#old p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.old-images {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.old-image {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#tattoo-care {
+    padding: 30px 30px;
+    background-color: #fffefe;
+    margin-top: 30px;    
+}
+
+.tattoo-care-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.tattoo-care-image {
+    flex: 1;
+    max-width: 30%;
+    margin-top: 50px;
+    margin-right: 35px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 200px; 
+}
+
+.tattoo-care-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tattoo-care-content {
+    flex: 2;
+    max-width: 70%;
+    text-align: left;
+}
+
+#tattoo-care h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.tattoo-care-content h3{
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.6em;
+}
+#tattoo-care p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.4em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+#contact{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    margin: 20px;
+    border-radius: 10px;
+    background: url(./ContactSectionimages/contactUSsection.png) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+/* Contact Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 20px;
+}
+
+.contact-icons .icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        max-width: 80%; 
+        top: 30%; 
+        right: 50%; 
+        transform: translateX(0); 
+    }
+
+    header h1 {
+        font-size: 2em; 
+    }
+
+    .header-content p {
+        font-size: 0.7em; 
+    }
+
+    .header-content button {
+        font-size: 0.6em; 
+        padding: 8px 16px; 
+    }
+}
+
+

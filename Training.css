@@ -1,0 +1,193 @@
+
+body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #000000;
+        overflow-x: hidden; 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; 
+    background-color: rgb(0, 0, 0); 
+    width: 99%; 
+    z-index: 1000;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.1s ease-in-out; 
+}
+
+.navbar.fixed {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    border-radius: 0; 
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(0, 0, 0); 
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.navbar h2 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-weight: 100;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+    box-shadow: 0 5px 0 #ffffff; 
+}
+
+header{
+    height: 110vh;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: right;
+    background: url('./Trainingpageimages/tattotraing.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 105%;
+    position: relative;
+}
+
+.training-title {
+    text-align: center;
+    color: #000000;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    padding-right:30px;
+    position: relative;
+}
+
+
+.training-content {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 100%;
+    padding: 20px;
+}
+
+.training-1, .training2, .training3, .training4 {
+    display: flex; 
+    align-items: center;
+    gap: 5px; 
+    width: 94%; 
+    background-color: rgba(248, 248, 248, 0.473); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.training-image-container {
+    flex: 2; 
+}
+
+.training-image {
+    width: 90%;
+    height: auto; 
+    border-radius: 10px;
+}
+
+.training-text {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px; 
+    padding-bottom: 220px;
+}
+
+.training-text h3 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2em;
+    color: #292929;
+}
+
+.training-text p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.4em;
+    text-align: left; 
+    color: #555;
+    font-size: 1.3em;
+}
+
+
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    margin: 20px;
+    border-radius: 10px;
+    background: url(./ContactSectionimages/contactUSsection.png) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+#contact h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 20px;
+}
+
+.contact-icons .icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons .icon:hover {
+    transform: scale(1.2);
+}
+

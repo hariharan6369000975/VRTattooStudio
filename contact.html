@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200">
+    <title>Contact Us | VR Tattoos</title>
+    <link rel="icon" href="./ContactSectionimages/logo.png" type="image/png">
+    <link rel="stylesheet" href="contact.css">
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     
+     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:wght@400;500;700&family=Jomhuria&family=Alkatra:wght@400..700&family=Kaushan+Script&family=Luckiest+Guy&display=swap" as="style" onload="this.rel='stylesheet'">
+ 
+    
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="./ContactSectionimages/logo.png" alt="VR Tattoos Logo" class="nav-logo">
+            <h2>VR Tattoo Studio</h2>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About Us</a></li>
+            <li><a href="./Our Gallery.html">Portfolio</a></li>
+            <li><a href="./Customized.html">Customized Designs</a></li>
+            <li><a href="./Training.html">Training Academy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    
+    <header class="header">
+        <img src="./Contactpageimages/contactheaderimage.jpg" alt="conimage">
+        <div class="header-text">
+            <p class="line1">To know more about our services,</p>
+            <p class="line2">Feel free to contact us anytime.</p>
+            <p class="line3">Send a Message To Us for an Appoinment</p>
+        </div>
+    </header>
+
+    
+    <section class="form-section">
+        <div class="contact-form">
+            <form id="contactForm" action="https://formspree.io/f/xpwaezny" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+
+                <button type="submit" id="submitBtn">Submit</button>             
+            </form>
+        </div>
+        <div class="contact-image"></div>
+    </section>
+
+    
+<section class="map-section">
+    <center><h2>Find Us Here</h2></center>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.896664850254!2d79.37498737409007!3d10.971171955573332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baacd2216d85381%3A0x96c079a5597afc8d!2sVR%20Tattoo%20studio%20and%20Training%20academy!5e0!3m2!1sen!2sin!4v1726501358700!5m2!1sen!2sin" 
+    width="1000" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+</section>
+
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><i class="fas fa-envelope"></i> Email: gopikrishnan.9952@gmail.com</p>
+        <p><i class="fas fa-phone"></i> Phone: +91 6382300411</p>
+        <p><i class="fas fa-map-marker-alt"></i> Address: 40/2A 8th Street, Kamraj Nagar, Palakarai, Kumbakonam, 612001</p>
+        <p>Connect with us and let your ideas take shape.</p>
+        <div class="contact-icons">
+            <a href="https://wa.me/6382300411" target="_blank"><img src="./ContactSectionimages/whatsapp.png" alt="WhatsApp" class="icon"></a>
+            <a href="https://www.instagram.com/vr_tattoo_studio_/" target="_blank"><img src="./ContactSectionimages/instagram.png" alt="Instagram" class="icon"></a>
+            <a href="mailto:gopikrishnan.9952@gmail.com"><img src="./ContactSectionimages/gmail.png" alt="Gmail" class="icon"></a>
+        </div>
+        <p>&copy; 2024 VR Tattoos. All rights reserved. | Privacy Policy | Terms of Service</p>
+    </section>
+
+    <script src="./contact.js"></script>
+</body>
+</html>

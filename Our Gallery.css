@@ -1,0 +1,336 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #000000;
+    overflow-x: hidden; 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; 
+    background-color: rgb(0, 0, 0); 
+    width: 99%; 
+    z-index: 1000;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.1s ease-in-out; 
+}
+
+.navbar.fixed {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    border-radius: 0; 
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(0, 0, 0); 
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.navbar h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: white;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+    box-shadow: 0 5px 0 #ffffff; 
+}
+
+
+
+header{
+    height: 110vh;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: right;
+    background: url('./Gallerypageimages/ourgalleryimage1.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+    font-size: 3.5em;
+    color: #ffffff;
+    text-shadow: 
+        -2px -2px 0 rgb(0, 0, 0), 
+        3px -3px 0 rgb(0, 0, 0),  
+        -2px 2px 0 rgb(0, 0, 0),  
+        3px 3px 0 rgb(0, 0, 0);   
+    opacity: 0; 
+    animation: slideInFromTop 1s ease-out forwards;
+}
+
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+#gallery {
+    background-color: white;
+    padding: 20px; 
+    background-attachment: fixed;
+}
+#gallery h3{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 2.1em;
+    color: #2c2c2c;
+}
+#gallery p{
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.5em;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+.gallery-container img,
+.gallery-container video {
+    width: 100%;  
+    height: auto; 
+    max-width: 900px; 
+    max-height: 1000px; 
+    object-fit: cover; 
+}
+
+.gallery-container img:hover,
+.gallery-container video:hover {
+    transform: scale(1.05); 
+    filter: brightness(1.2); 
+    border: 4px solid black;
+}
+
+.gallery-container img:nth-child(-n+4),
+.gallery-container video:nth-child(-n+4) {
+    max-height: 380px; 
+}
+
+.gallery-container img:nth-child(n+5):nth-child(-n+8),
+.gallery-container video:nth-child(n+5):nth-child(-n+8) {
+    max-height: 380px; 
+}
+
+
+#gallery p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #000000; 
+}
+.ambigram-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    padding-top: 80px;
+    background-color: hsl(0, 0%, 99%);
+    border-radius: 10px;
+}
+
+.ambigram-container {
+    position: relative; 
+    perspective: 1000px; 
+    width: 400px; 
+    height: 300px; 
+}
+
+.ambigram-image {
+    margin-top: 50px;
+    margin-left: 50px;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    transition: transform 0.6s ease;
+    backface-visibility: hidden;
+}
+
+.ambigram-image:hover {
+    transform: scale(1.05);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#ambigram-front {
+    transform: rotateY(0deg);
+}
+
+#ambigram-back {
+    transform: rotateY(180deg);
+}
+
+.ambigram-container.flip #ambigram-front {
+    transform: rotateY(180deg);
+}
+
+.ambigram-container.flip #ambigram-back {
+    transform: rotateY(0deg);
+}
+
+.ambigram-info {
+    max-width: 700px;
+    margin-left: 20px;
+    text-align: center; 
+    color: #ddd;
+    padding: 15px; 
+}
+
+.ambigram-info h2 {
+    font-family: 'Lobster', cursive;
+    color: #000000;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.ambigram-info p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.5em;
+    color: #2c2c2c;
+    line-height: 1.6;
+    margin-top: 5px; 
+}
+.ambigram-info h3{
+    font-family: "Alkatra", system-ui;
+    font-size: 1.3em;
+}
+
+
+  #contact{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    margin: 20px;
+    border-radius: 10px;
+    background: url(./ContactSectionimages/contactUSsection.png) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 20px;
+}
+
+.contact-icons .icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-85px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.header-text h2 {
+    animation: slideInFromTop 1s ease-out;
+}
+
+.gallery-container img,
+.gallery-container video {
+    opacity: 0; 
+    transition: opacity 0.6s ease, transform 0.6s ease; 
+}
+
+.gallery-container img.fade-in,
+.gallery-container video.fade-in {
+    opacity: 1; 
+    transform: translateY(0);
+    animation: fadeIn 1s ease-out;
+}

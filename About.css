@@ -1,0 +1,330 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; 
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; 
+    background-color: rgb(0, 0, 0); 
+    width: 99%; 
+    z-index: 1000;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.1s ease-in-out; 
+}
+
+.navbar.fixed {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    border-radius: 0; 
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(0, 0, 0); 
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.navbar h2 {
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-weight: 100;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+    box-shadow: 0 5px 0 #ffffff; 
+}
+
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;    
+    text-align: right;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+
+#about {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;     
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+
+
+#environmental {
+    padding: 50px 10%;
+    text-align: left;
+    background-color: #fafafa; 
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.environmental-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; 
+    margin-bottom: 30px;
+}
+
+.environment-description {
+    flex: 1;
+    color: #333; 
+    line-height: 1.8;
+    padding-top: 0px;
+    font-family: "Alkatra", system-ui;
+    font-size: 1.2em;
+}
+
+.environment-image {
+    margin-top: 25px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); 
+}
+
+
+#environmental h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px; 
+}
+
+
+
+#founder {
+    padding: 60px 10%;
+    margin-bottom: 40px;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#founder h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.1em;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.founder-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.founder-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.founder-description {
+    flex: 1;
+    line-height: 1.8;
+    color: #444;
+    padding: 10px;
+}
+
+.founder-description p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.founder-description h3{
+    font-family: "Kaushan Script", cursive;
+}
+
+
+#services {
+    padding: 40px 10%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#services h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.services-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444;
+}
+.services-content p{
+    font-family: "Kaushan Script", cursive;
+    font-size: 1.5em;
+}
+
+.service i {
+    font-size: 2.5em;
+    color: #1d1c1c;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover i {
+    transform: scale(1.2);
+    color: #000000;
+}
+
+
+#customer-reviews {
+    padding: 40px 10%;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#customer-reviews h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#customer-reviews p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.3em;
+}
+#customer-reviews a{
+    font-family: "Kaushan Script", cursive;
+    color: rgb(59, 71, 245);
+    font-size: 1.3em;
+}
+#customer-reviews a:hover{
+
+    color:  blue;
+}
+
+
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    margin: 20px;
+    border-radius: 10px;
+    background: url(./ContactSectionimages/contactUSsection.png) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+#contact h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-family: "Alkatra", system-ui;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 20px;
+}
+
+.contact-icons .icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons .icon:hover {
+    transform: scale(1.2);
+}
